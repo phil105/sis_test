@@ -38,10 +38,6 @@ public class SISWebController {
     public String index(Model model) {
         log.debug("SISWebController.index() - Started");
         Team team = new Team();
-        team.setName("Test name");
-        team.setCity("Test city");
-        team.setNoOfPlayers(56);
-        team.setStadiumCapacity(60000);
         team.setId((new Random()).nextLong());
         model.addAttribute("teamFormModel", team);
         log.debug("SISWebController.index() - Ended");
